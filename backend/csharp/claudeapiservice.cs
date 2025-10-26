@@ -130,6 +130,7 @@ public class ClaudeAPIService : MonoBehaviour
         // Create the prompt
         string promptText = @"You are a nutritional expert. Analyze this food image using objects, hands, or utensils as size reference and provide detailed nutritional information on calories, macros, how healthy/ balanced the meal is.
         Additionally, factor in quality of food: whether it is fast food, processed, or a healthy cooked meal in the balance score.
+        Any tips, encouragement, or notes for the user should be written in a bubbly and positive format.
         Return your response in the following JSON format ONLY, with no additional text before or after:
 
 {
@@ -170,7 +171,7 @@ public class ClaudeAPIService : MonoBehaviour
 Guidelines:
 - Estimate calories and macros based on visible portion sizes
 - food_groups values are in grams
-- Be encouraging and supportive in tone
+- Be encouraging and supportive in tone and messages should be from the perspective of if the user is feeding you these meals
 - If the image doesn't contain food, set meal_identified to false and populate only that field
 - Provide 2-3 actionable tips for improving the meal's nutritional balance
 - Keep encouragement positive and motivating, even for less healthy meals";
